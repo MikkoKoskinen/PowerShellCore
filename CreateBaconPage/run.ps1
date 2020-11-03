@@ -10,7 +10,7 @@ Write-Host "PowerShell HTTP trigger function processed a request."
 $newsTitle = $Request.Query.newsTitle
 $newsBody = $Request.Query.newsBody
 $meatParas = $Request.Query.meatParas
-$meatType = $Request.Query.meatType
+#Save for later: $meatType = $Request.Query.meatType
 
 #***Create SharePoint News Development
 Write-Host " "
@@ -67,7 +67,7 @@ If($haveMainParameters){
         Add-PnPClientSideText -Page $newsPage -Text $newsBody -Connection $spConn
 
         #Connect to enterpise service
-        $baconText = GiveMeBacon -meatParas $meatParas -meatType $meatType
+        $baconText = GiveMeBacon -meatParas $meatParas #Save for later -meatType $meatType
     
         #Add related section
         Write-Host "..add related section"
