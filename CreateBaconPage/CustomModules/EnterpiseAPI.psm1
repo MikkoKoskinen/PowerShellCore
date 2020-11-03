@@ -26,3 +26,5 @@ function GiveMeBacon{
 
     return $response
 }
+
+Export-ModuleMember -Function GiveMeBacon
