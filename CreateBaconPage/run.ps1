@@ -45,7 +45,7 @@ catch {
 #Check the parameters necessary for the application
 Write-Host " "
 Write-Host "*Check the parameters necessary for the application"
-If($spConn -and $newsTitle -and $newsBody -and $meatParas -and $meatType){
+If($spConn -and $newsTitle -and $newsBody -and $meatParas){
     #Parameters are available
     $haveMainParameters = $true
 }
